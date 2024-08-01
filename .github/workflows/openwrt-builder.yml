@@ -1,3 +1,4 @@
+
 #
 # https://github.com/P3TERX/Actions-OpenWrt
 #
@@ -17,7 +18,7 @@ on:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://github.com/LiBwrt-op/openwrt-6.x
+  REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
