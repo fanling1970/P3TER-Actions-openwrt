@@ -66,7 +66,6 @@ jobs:
 
     - name: Update feeds(应用patch &更新feeds)
       run: |
-        openwrt/jdcloud-ax1800-pro.patch
         cd openwrt
         git apply jdcloud-ax1800-pro.patch
         ./scripts/feeds update -a
