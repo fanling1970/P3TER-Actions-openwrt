@@ -64,11 +64,8 @@ jobs:
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
 
-    - name: Update feeds(应用patch &更新feeds)
-      run: |
-        cd openwrt
-        git apply jdcloud-ax1800-pro.patch
-        ./scripts/feeds update -a
+    - name: Update feeds(更新feeds)
+      run: cd openwrt && ./scripts/feeds update -a
 
     - name: Install feeds(安装feeds)
       run: cd openwrt && ./scripts/feeds install -a
