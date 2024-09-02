@@ -10,17 +10,17 @@
 # See /LICENSE for more information.
 #
 
-name: OpenWrt lede-ax6600
+name: OpenWrt King-Of-Knights-ax6600
 
 on:
   repository_dispatch:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_BRANCH: master
+  REPO_URL: https://github.com/King-Of-Knights/openwrt-6.x.git
+  REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: lede-wifi.config
+  CONFIG_FILE: King-wifi.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: false
@@ -146,7 +146,7 @@ jobs:
         body: |
           **This is OpenWrt Firmware for ${{ env.FIRMWARE_TAG }}**
           ### 📒 固件信息(docker)
-          - 有WIFI的6.1.100内核固件,带首页有商店
+          - 有WIFI的6.6内核固件,带首页有商店
           - 💻 这是 ${{ env.FIRMWARE_TAG }} 平台使用的 OpenWrt 固件
           - ⚽ 固件源码: ${{ env.REPO_URL }}
           - 💝 源码分支: ${{ env.REPO_BRANCH }}
