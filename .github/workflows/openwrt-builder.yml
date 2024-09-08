@@ -11,7 +11,7 @@
 # See /LICENSE for more information.
 #
 
-name: OpenWrt Builder
+name: lede-OpenWrt Builder
 
 on:
   repository_dispatch:
